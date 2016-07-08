@@ -1,0 +1,16 @@
+{
+  "plugins": [
+    "stylelint-scss"
+  ],
+  "extends": "stylelint-config-standard",
+  "rules": {
+    "scss/selector-no-redundant-nesting-selector": true,
+    "length-zero-no-unit": true,
+    "no-eol-whitespace": true,
+    "no-missing-eof-newline": null,
+    "max-empty-lines": 2,
+    "number-leading-zero": null,
+    "media-feature-no-missing-punctuation": null,
+    "comment-whitespace-inside": null
+  }
+}

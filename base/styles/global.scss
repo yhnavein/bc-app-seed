@@ -1,0 +1,34 @@
+/*
+  You can make some adjustments applicable for all of the applications
+*/
+
+.thumbnail {
+  height: 200px;
+}
+
+/* Fix Bootstrap-UI for Angular */
+.nav,
+.pagination,
+.carousel,
+.panel-title a {
+  cursor: pointer;
+}
+
+#bc-container {
+  min-height: calc(100vh - 165px);
+  background: $body-background;
+
+  > .container { padding-top: 82px; }
+
+  /* Because fuck life when using new Angular */
+  > * { display: block; }
+
+  /* Copy below to your app if you use background image to adjust its sizing
+  for big resolutions. Change `min-width` to the used image width
+
+  @media (min-width: 1920px) {
+    background-size: contain;
+  }
+
+  */
+}

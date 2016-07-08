@@ -1,0 +1,34 @@
+'use strict';
+
+var path = require('path');
+var gulp = require('gulp');
+var conf = require('./conf');
+
+var $ = require('gulp-load-plugins')();
+
+var browserSync = require('browser-sync');
+
+gulp.task('inject-reload', ['inject'], function() {
+  browserSync.reload();
+});
+
+gulp.task('inject', ['scripts', 'styles'], function () {
+  var injectStyles = gulp.src([
+    path.join(conf.paths.serve, '/app/**/*.css'),
+    path.join('!' + conf.paths.serve, '/app/vendor.css')
+  ], { read: false });
+
+  var injectScripts = gulp.src([
+    path.join(conf.paths.serve, '/app/**/*.module.js')
+  ], { read: false });
+
+  var injectOptions = {
+    ignorePath: [conf.paths.src, conf.paths.serve],
+    addRootSlash: false
+  };
+
+  return gulp.src(path.join(conf.paths.src, '/*.html'))
+    .pipe($.inject(injectStyles, injectOptions))
+    .pipe($.inject(injectScripts, injectOptions))
+    .pipe(gulp.dest(conf.paths.serve));
+});

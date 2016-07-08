@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package>
+  <metadata>
+    <id>Bc.WebApp.Name.$BranchSuffix$</id>
+    <title>Bc.WebApp.Name.$BranchSuffix$</title>
+    <version>$version$</version>
+    <authors></authors>
+    <description></description>
+    <tags></tags>
+    <projectUrl></projectUrl>
+    <dependencies>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="dist\**\*.*" />
+  </files>
+</package>
