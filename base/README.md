@@ -4,7 +4,7 @@
 
 ```sh
 node.js v4.*
-npm i -g eslint eslint-plugin-angular typings plop
+npm i -g eslint eslint-plugin-angular typings plop gulp-cli
 ```
 
 ## Setting up
@@ -69,27 +69,13 @@ git clone git@PROJ_URL.git new_proj
 cd new_proj
 git remote add boilerplate git@SEED_PROJ_URL.git
 git fetch boilerplate
-git branch --set-upstream-to=boilerplate/master seed
 git checkout master
 ```
 
 > When complete, your local repository will have 2 remotes attached:
-> `boilerplate` - which points to the local `seed` branch (use this only if you want to send some changes directly to the seed project. And do so only from the `seed` branch)
+> `boilerplate` - which points to the **remote** `master` branch (use this only if you want to merge some changes from the `boilerplate` remote)
 > `origin` - which points to the local `master` branch (for every-day use)
 
-> When doing anything on the `seed` branch, please be very careful and review thoroughly changes before commiting and sending them to the `boilerplate` remote. Also - good practice - use forking and Pull Request system for managing `boilerplate`'s code.
-
-### Add something to the seed boilerplate
-
-```
-git checkout seed
-git pull
-# do something... (or cherry-pick)
-git commit
-git push boilerplate HEAD:master
-```
-
-> And propagate to the app by:
 
 ### Update project from the boilerplate
 
