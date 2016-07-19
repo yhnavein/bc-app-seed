@@ -11,6 +11,7 @@
     "max-empty-lines": 2,
     "number-leading-zero": null,
     "media-feature-no-missing-punctuation": null,
-    "comment-whitespace-inside": null
+    "comment-whitespace-inside": null,
+    "no-missing-end-of-source-newline": null
   }
 }

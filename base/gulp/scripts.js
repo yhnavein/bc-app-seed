@@ -31,7 +31,7 @@ var handleScripts = (tsFilter) => {
     .pipe(gulp.dest('.tmp/serve/app/'));
 };
 
-gulp.task('scripts', ['tslint'],
+gulp.task('scripts', [],
   () => handleScripts()
 );
 

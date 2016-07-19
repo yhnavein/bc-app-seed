@@ -106,4 +106,4 @@ gulp.task('clean', function () {
   ]);
 });
 
-gulp.task('build', ['clean', 'html', 'assets', 'fonts', 'components-copy', 'other']);
+gulp.task('build', ['clean', 'html', 'assets', 'fonts', 'components-copy', 'other', 'tslint']);
