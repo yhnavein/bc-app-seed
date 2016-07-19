@@ -81,7 +81,7 @@ git checkout master
 
 ```
 git fetch boilerplate
-git merge boilerplate/master
-# ... fix potential conflicts
+git merge --no-ff --no-commit boilerplate/master
+# ... Review and choose changes to include, reset everything else
 git commit
 ```
